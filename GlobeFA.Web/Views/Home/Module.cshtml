@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Module";
+    Layout = "~/Views/Shared/_LayoutModule.cshtml";
+}
+
+<script src="~/app/Module.js"></script>
+
+<script>
+</script>
+
+<div class="container e_moduleMargin">
+    <div class="col-sm-10">
+        <div class="panel panel-default" style="vertical-align: middle">
+            <div class="panel-heading"><b>eApartment Modules</b></div>
+            <div>
+                @if (User.IsInRole("Admin"))
+                {
+                    <a href="@Url.Action("LandLord", "Home")"><input type="button" id="btnLandlord" class="e_moduleButtonLandlord" title="Admin" /></a>
+                }
+                @if (User.IsInRole("Admin"))
+                {
+                    <a href="@Url.Action("Tenant", "Home")"><input type="button" id="btnTenant" class="e_moduleButtonTenant" title="Tenant" /></a>
+                }
+                @*<a href="@Url.Action("Easset","Home")"><input type="button" id="buttonEsecure" class="e_moduleButtonEasset" ng-click="" title="eAsset" /></a>*@
+                <a href="@Url.Action("Visitor","Home")"><input type="button" id="btnEAsset" class="e_moduleButtonEasset" title="Visitor" /></a>
+            </div>
+        </div>
+    </div>
+</div>

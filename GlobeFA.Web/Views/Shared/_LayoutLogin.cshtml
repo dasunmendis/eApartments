@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>@ViewBag.Title | GlobeFA</title>
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <link href="~/Content/sb-admin-2.css" rel="stylesheet">
+    <link href="~/fonts/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('#uname').click(function (event) {
+                $('#uname').val('');
+                if ($("#error") != 'undefined') {
+                    $("#error").hide();
+                }
+            });
+            $('#upwd').click(function (event) {
+                $('#upwd').val('');
+                if ($("#error") != 'undefined') {
+                    $("#error").hide();
+                }
+            });
+        });
+
+        //login with enter button
+        function loginByEnter(e) {
+            var code = e.keyCode;
+            if (code == 13) {
+                checkform();
+            }
+        }
+
+        function checkform(obj) {
+            var UserName = document.getElementById('uname').value;
+            var Pass = document.getElementById('upwd').value;
+            var remember = $('#chck_rememberme_id').is(':checked');
+
+            if (UserName == '' || Pass == '' || UserName == 'User Name' || Pass == '******') {
+                document.getElementById('uname').style.borderColor = '#F00';
+                document.getElementById('upwd').style.borderColor = '#F00';
+                document.getElementById('error').style.display = 'block';
+                document.getElementById('error').innerHTML = 'Invalid Username or Password';
+            } else {
+                $('#uname').attr("disabled", "disabled");
+                $('#upwd').attr("disabled", "disabled");
+                $('#btnLogin_id').attr("disabled", "disabled");
+                $('#btnLogin_id').text('logging in, please wait');
+
+                $.ajax({
+                    type: 'POST',
+                    url: '/Account/Login?username=' + UserName + '&password=' + Pass + '&remember=' + remember,
+                    contentType: 'application/json; charset=utf-8',
+                    dataType: 'json',
+                    success: function (res) {
+                        if (res.indexOf('Successfully Logged In|Dealer') > -1) {
+                            location.href = '/Home/Index';
+                        }
+                        else {
+                            $('#uname').removeAttr("disabled");
+                            $('#upwd').removeAttr("disabled");
+                            $('#btnLogin_id').removeAttr("disabled");
+                            $('#btnLogin_id').text('Log In');
+                            document.getElementById('error').style.display = 'block';
+                            document.getElementById('error').innerHTML = res;
+                        }
+                    },
+                    failure: function (error) {
+                        document.getElementById('error').style.display = 'block';
+                        document.getElementById('error').innerHTML = 'error';
+                    }
+                });
+            }
+        }
+
+    </script>
+
+</head>
+<body>
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+
+    <script src="~/Scripts/jquery-1.11.0.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/plugins/metisMenu/metisMenu.min.js"></script>
+    <script src="~/Scripts/sb-admin-2.js"></script>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobeFA.Web", "GlobeFA.Web\GlobeFA.Web.csproj", "{FADCCF2E-7B5A-4599-9F9F-A8D90D8B4228}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobeFA.DAL", "GlobeFa.DAL\GlobeFA.DAL.csproj", "{DA565C10-A167-4B07-A073-45F93AF16D0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobeFA.Infrastructure", "GlobeFa.Infrastructure\GlobeFA.Infrastructure.csproj", "{3A32D066-2425-40A5-B11D-4D369CC182C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FADCCF2E-7B5A-4599-9F9F-A8D90D8B4228}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FADCCF2E-7B5A-4599-9F9F-A8D90D8B4228}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FADCCF2E-7B5A-4599-9F9F-A8D90D8B4228}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FADCCF2E-7B5A-4599-9F9F-A8D90D8B4228}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA565C10-A167-4B07-A073-45F93AF16D0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA565C10-A167-4B07-A073-45F93AF16D0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA565C10-A167-4B07-A073-45F93AF16D0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA565C10-A167-4B07-A073-45F93AF16D0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A32D066-2425-40A5-B11D-4D369CC182C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A32D066-2425-40A5-B11D-4D369CC182C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A32D066-2425-40A5-B11D-4D369CC182C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A32D066-2425-40A5-B11D-4D369CC182C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

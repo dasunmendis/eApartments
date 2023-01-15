@@ -1,0 +1,88 @@
+﻿/* extra styles */
+
+.gridStyle {
+    border: 1px solid rgb(212,212,212);
+    width: 400px;
+    height: 300px;
+}
+
+.e_moduleButtonEcorp {
+    background-image: url(../Images/eCorp.jpg);
+    width: 225px;
+    height: 225px;
+    border: medium none;
+    cursor: pointer;
+    /*background-repeat: no-repeat;*/
+}
+
+.e_moduleButtonEsecure {
+    background-image: url(../Images/eSecure.jpg);
+    width: 225px;
+    height: 225px;
+    border: medium none;
+    cursor: pointer;
+    /*background-repeat: no-repeat;*/
+}
+
+.e_moduleButtonEasset {
+    background-image: url(../Images/eAsset.jpg);
+    width: 225px;
+    height: 225px;
+    border: medium none;
+    cursor: pointer;
+    /*background-repeat: no-repeat;*/
+}
+
+.e_moduleButtonLandlord {
+    background-image: url(../Images/landlord.jpg);
+    width: 225px;
+    height: 225px;
+    border: medium none;
+    cursor: pointer;
+    /*background-repeat: no-repeat;*/
+}
+
+.e_moduleButtonTenant {
+    background-image: url(../Images/tenant.jpg);
+    width: 225px;
+    height: 225px;
+    border: medium none;
+    cursor: pointer;
+    /*background-repeat: no-repeat;*/
+}
+
+.e_moduleApartment {
+    background-image: url(../Images/apartment_management.jpg);
+    width: 225px;
+    height: 225px;
+    border: medium none;
+    cursor: pointer;
+    /*background-repeat: no-repeat;*/
+}
+
+.e_moduleMargin {
+    margin-left: 160px;
+    margin-top: 150px;
+}
+
+.e_btn {
+    padding: 9px 12px;
+}
+
+.modalStyle {
+    width: 80% !important;
+}
+
+.isRequiredField {
+    border-color: red;
+}
+
+.gridStyle {
+    border: 1px solid rgb(212,212,212);
+    width: 400px; 
+    height: 300px
+}
+
+.pagination {
+    display: inline !important;
+}

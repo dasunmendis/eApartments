@@ -1,0 +1,84 @@
+﻿
+
+/* Some overrides from default bootstrap styles */
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* COMPONENTS */
+
+
+/* labels */
+.label, .badge {
+    font-weight: lighter;
+    font-size: 90%;
+}
+
+.label-success, .badge-success {
+    background-color: #6cc3bd;
+}
+
+.label-warning, .badge-warning {
+    background-color: #f29550;
+}
+
+.label-danger, .badge-danger {
+    background-color: #d26c63;
+}
+
+.label-disabled, .badge-disabled {
+    background-color: #e1e4e9;
+    color: #999;
+}
+
+.label-info, .badge-info {
+    background-color: rgb(104, 163, 213);
+}
+
+
+/* Table General */
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+    background-color: #f9fafc !important;
+}
+
+.table > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 1px solid #ddd;
+}
+
+
+/*panel heading*/
+.panel-heading {
+    padding: 15px 10px 15px 10px;
+    border-bottom: 0px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.panel-default > .panel-heading {
+    color: #333;
+    background-color: #f5f6f8;
+    border-color: none !important;
+}
+
+/* code*/
+code {
+    color: rgb(78, 153, 223);
+}
+
+.panel-default.nx-panel-heading > .panel-heading {
+    height: 37px;
+    padding: 1px 10px 15px 10px;
+ }
+
+ .btn.nx-btn {
+    font-size: 11px;
+}
+ .panel-footer.nx-panel-footer {
+     padding: 4px 15px;
+ }
+
+ 
