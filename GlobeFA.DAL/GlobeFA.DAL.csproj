@@ -61,6 +61,7 @@
     <Compile Include="Entities\Employee.cs" />
     <Compile Include="Entities\Mail.cs" />
     <Compile Include="Entities\Module.cs" />
+    <Compile Include="Entities\Tenant.cs" />
     <Compile Include="Enums\CultureInfoEnum.cs" />
     <Compile Include="Enums\EmploymentInfoEnum.cs" />
     <Compile Include="Enums\PersonInfoEnum.cs" />

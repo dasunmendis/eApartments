@@ -3,7 +3,7 @@ using System.Linq;
 using GlobeFa.DAL.Entities;
 using GlobeFa.DAL.Repository;
 
-namespace GlobeFa.Infrastructure.Services.eCorp
+namespace GlobeFa.Infrastructure.Services
 {
     public class ContactService : AbstractService
     {

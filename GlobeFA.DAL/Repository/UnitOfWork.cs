@@ -22,6 +22,15 @@ namespace GlobeFa.DAL.Repository
             }
         }
 
+        private GenericRepository<Tenant> _tenantRepository;
+        public GenericRepository<Tenant> TenantRepository
+        {
+            get
+            {
+                return _tenantRepository ?? (_tenantRepository = new GenericRepository<Tenant>(_context));
+            }
+        }
+
         private GenericRepository<Contact> _contactRepository;
         public GenericRepository<Contact> ContactRepository
         {

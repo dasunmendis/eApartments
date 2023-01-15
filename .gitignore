@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/GlobeFA.DAL/bin/Debug
+/.vs/GlobeFA/config/applicationhost.config
+/.vs/GlobeFA/v16/.suo
+/GlobeFA.DAL/obj/Debug
+/GlobeFA.Infrastructure/bin/Debug
+/GlobeFA.Infrastructure/obj/Debug
+/GlobeFA.Web/bin
+/.idea/config/applicationhost.config
+/.idea/.idea.GlobeFA/.idea
+/GlobeFA.Web/obj/Debug
