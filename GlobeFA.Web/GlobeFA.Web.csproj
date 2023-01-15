@@ -170,7 +170,10 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ContactsController.cs" />
+    <Compile Include="Controllers\EmployeesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\TenantsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -180,6 +183,9 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\ContactDetails.js" />
+    <Content Include="app\EmployeeDetails.js" />
+    <Content Include="app\TenantDetails.js" />
     <Content Include="Content\angular.treeview.css" />
     <Content Include="Content\bootstrap-datetimepicker.css" />
     <Content Include="Content\bootstrap-overrides.css" />
@@ -317,9 +323,11 @@
     <Content Include="Views\Home\Module.cshtml" />
     <Content Include="Views\Shared\_LayoutModule.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Employees\EmployeeDetails.cshtml" />
+    <Content Include="Views\Contacts\ContactDetails.cshtml" />
+    <Content Include="Views\Tenants\TenantDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="app\" />
     <Folder Include="App_Data\" />
     <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>

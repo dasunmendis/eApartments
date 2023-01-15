@@ -2,7 +2,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title | GlobeFA</title>
+    <title>@ViewBag.Title | eApartment</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     @Scripts.Render("~/bundles/vendor")
@@ -42,13 +42,16 @@
                         @if (User.IsInRole("Admin"))
                         {
                             <li>
-                                <a href="#"><i class="fa fa-edit fa-fw"></i> Stakeholders<span class="fa arrow"></span></a>
+                                <a href="#"><i class="fa fa-user-md fa-fw"></i> Stakeholders<span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level">
                                     <li>
-                                        <a href="@Url.Action("Landlords", "Stakeholders")"><i class="fa fa-group fa-fw"></i> Land Lords</a>
+                                        <a href="@Url.Action("EmployeeDetails", "Employees")"><i class="fa fa-group fa-fw"></i> Employees</a>
                                     </li>
                                     <li>
-                                        <a href="@Url.Action("Tenants", "Stakeholders")"><i class="fa fa-building-o fa-fw"></i> Tenants</a>
+                                        <a href="@Url.Action("TenantDetails", "Tenants")"><i class="fa fa-user fa-fw"></i> Tenants</a>
+                                    </li>
+                                    <li>
+                                        <a href="@Url.Action("ContactDetails", "Contacts")"><i class="fa fa-book fa-fw"></i> Contacts</a>
                                     </li>
                                 </ul>
                             </li>
@@ -56,19 +59,19 @@
                         @if (User.IsInRole("Admin"))
                         {
                             <li>
-                                <a href="#"><i class="fa fa-key fa-fw"></i> Apartments<span class="fa arrow"></span></a>
+                                <a href="#"><i class="fa fa-building-o fa-fw"></i> Apartments<span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level">
                                     <li>
-                                        <a href=""><i class="fa fa-lock fa-fw"></i> Class 1</a>
+                                        <a href=""><i class="fa fa-building fa-fw"></i> Class 1</a>
                                     </li>
                                     <li>
-                                        <a href=""><i class="fa fa-lock fa-fw"></i> Class 2</a>
+                                        <a href=""><i class="fa fa-building fa-fw"></i> Class 2</a>
                                     </li>
                                     <li>
-                                        <a href=""><i class="fa fa-lock fa-fw"></i> Class 3</a>
+                                        <a href=""><i class="fa fa-building fa-fw"></i> Class 3</a>
                                     </li>
                                     <li>
-                                        <a href=""><i class="fa fa-lock fa-fw"></i> Suite</a>
+                                        <a href=""><i class="fa fa-building fa-fw"></i> Suite</a>
                                     </li>
                                 </ul>
                             </li>

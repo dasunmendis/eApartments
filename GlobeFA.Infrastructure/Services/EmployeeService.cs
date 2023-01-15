@@ -6,7 +6,7 @@ using GlobeFa.DAL.Entities;
 using GlobeFa.DAL.Enums;
 using GlobeFa.DAL.Repository;
 
-namespace GlobeFa.Infrastructure.Services.eCorp
+namespace GlobeFa.Infrastructure.Services
 {
     public class EmployeeService : AbstractService
     {

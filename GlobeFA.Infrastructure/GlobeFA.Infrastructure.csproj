@@ -44,6 +44,7 @@
     <Compile Include="Services\Common\CommonService.cs" />
     <Compile Include="Services\ContactService.cs" />
     <Compile Include="Services\EmployeeService.cs" />
+    <Compile Include="Services\TenantService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Bootstrap.FontAwsome.css" />
